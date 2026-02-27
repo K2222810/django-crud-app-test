@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Collector</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/base.css' %}">
+    {% block head %}{% endblock %}
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'book-list' %}">All Books</a></li>
+            {% if user.is_authenticated %}
+                <li><a href="{% url 'book-create' %}">Add a Book</a></li>
+                <li>
+                    <form action="{% url 'logout' %}" method="post" style="display: inline; margin: 0;">
+                        {% csrf_token %}
+                        <button type="submit" class="nav-link nav-logout" style="background: none; border: none; cursor: pointer; padding: 0; font: inherit; text-decoration: none;">Log Out ({{ user.username }})</button>
+                    </form>
+                </li>
+            {% else %}
+                <li><a href="{% url 'login' %}">Log In</a></li>
+                <li><a href="{% url 'signup' %}">Sign Up</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

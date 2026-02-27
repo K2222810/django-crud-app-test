@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+{% endblock %}
+
+{% block content %}
+<section class="page-header">
+    <h1>Sign Up</h1>
+</section>
+
+<form action="" method="post" class="form-container">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn submit">Create Account</button>
+</form>
+{% endblock %}
