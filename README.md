@@ -17,10 +17,5 @@ This project was created to practice basic Create, Read, Update, and Delete oper
 - Update records
 - Delete records
 
-## Running the Project
-1. Clone the repository
-2. Install dependencies
-3. Run the Django server
-
 ## Notes
 This is a simple test project for practicing Django basics.
