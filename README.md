@@ -1,47 +1,70 @@
-# intro-to-express-lab
+# Django CRUD App Lab
+A Django lab project focused on building CRUD functionality and understanding full-stack web patterns.
 
-A beginner Express lab focused on creating routes and working with route parameters.
+## Screenshot/Logo
+Add a screenshot here.
 
-## ✨ Technologies
+## Description
+This project was built to practice creating, reading, updating, and deleting data in a Django application. It was a useful way to strengthen understanding of models, views, templates, routing, and how data flows through a full-stack Python web app.
 
-- **Node.js**
-- **Express**
+The lab helped improve confidence with Django structure and reinforced the basics of building database-driven applications.
 
-## 🚀 Features
+## Deployment Link
+Add a deployment or local setup link here if available.
 
-- Route param practice:
-  - Greeting users (`/greetings/:username`)
-  - Rolling dice (`/roll/:number`)
-  - Index-based lookups (`/collectibles/:index`)
+## Planning
+Before building, the main focus was on how the application data should be structured and how users would interact with it.
 
-## 🛠️ The Process
+Planning included:
 
-This lab focuses on:
+- Designing the data model
+- Planning CRUD routes and page flow
+- Structuring templates and views clearly
+- Thinking about how the user would create and manage records
 
-1. Creating an Express server.
-2. Defining `GET` routes.
-3. Using route params (`req.params`).
-4. Returning responses with `res.send()`.
+## Brief
+The goal of this lab was to build a Django application with full CRUD functionality.
 
-## ▶️ Running the Project
+The project needed to show stronger understanding of Django app structure, database-backed features, and handling user interactions across templates and views.
 
-### 1) Clone the repository
+## Build Process
+The project started with setting up the Django project and app structure. From there, models, views, templates, forms, and routes were added to create a working CRUD experience.
 
-```bash
-git clone https://github.com/K2222810/intro-to-express-lab.git
-cd intro-to-express-lab
-```
+As development continued, the focus moved toward making the app more organised, functional, and easier to use.
 
-### 2) Install dependencies
+## Technologies Used
+- Python
+- Django
+- HTML
+- CSS
+- SQLite or Django default database setup
 
-```bash
-npm install
-```
+## Key Highlights
+- Full CRUD functionality
+- Uses Django models, views, and templates
+- Database-driven application structure
+- Strengthens Python web development skills
 
-### 3) Start the server
+## Challenges
+- Understanding Django project structure
+- Connecting models, views, and templates correctly
+- Managing forms and routing clearly
+- Keeping the CRUD flow easy to follow
 
-```bash
-npm start
-```
+## Wins
+- Built a functioning Django CRUD application
+- Improved confidence with Django fundamentals
+- Practiced building database-backed features
+- Strengthened understanding of full-stack Python workflows
 
-Open: `http://localhost:3000`
+## Key Learnings / Takeaways
+- Better understanding of Django CRUD patterns
+- Improved confidence with models, views, and templates
+- Learned more about structuring Python web apps
+- Gained more experience with full-stack application flow
+
+## Things I Could Have Done Better
+- I could have added clearer setup instructions
+- I could have improved the project presentation
+- I could have added more validation and polish
+- I could have documented the app purpose more clearly
